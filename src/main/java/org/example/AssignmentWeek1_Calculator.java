@@ -7,6 +7,22 @@ import java.util.concurrent.ConcurrentHashMap;
 class AssignmentWeek1_Calculator {
     public static final Scanner scanner = new Scanner(System.in);
 
+    public static double divide (double one, double two){
+        return one / two;
+    }
+
+    public static double multiply (double one, double two){
+        return one * two;
+    }
+
+    public static double subtract (double one, double two){
+        return one - two;
+    }
+
+    public static double add (double one, double two){
+        return one + two;
+    }
+
 
     public static void main(String[] args) {
 
@@ -40,22 +56,22 @@ class AssignmentWeek1_Calculator {
                 switch (operators) {
 
                     case '+':
-                        result = number1 + number2;
+                        result = add(number1, number2);
                         System.out.println(number1 + " + " + number2 + " = " + result);
                         break;
 
                     case '-':
-                        result = number1 - number2;
+                        result = subtract(number1, number2);
                         System.out.println(number1 + " - " + number2 + " = " + result);
                         break;
 
                     case '*':
-                        result = number1 * number2;
+                        result = multiply(number1, number2);
                         System.out.println(number1 + " * " + number2 + " = " + result);
                         break;
 
                     case '/':
-                        result = number1 / number2;
+                        result = divide(number1, number2);
                         System.out.println(number1 + " / " + number2 + " = " + result);
                         break;
                     default:
